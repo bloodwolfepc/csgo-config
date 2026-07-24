@@ -13,12 +13,12 @@
         pkgs.mkShell {
           packages = with pkgs; [
             pkg-config
-            racket
+            lua
+            luaPackages.penlight
+            luaPackages.argparse
             gnumake
           ];
           shellHook = ''
-            raco pkg install --auto racket-langserver
-            raco pkg install --auto fmt
             export CS2_CONFIG_DIR=$HOME/.local/share/steamgames/steamapps/common/Counter-Strike\ Global\ Offensive/game/csgo/cfg
           '';
         };

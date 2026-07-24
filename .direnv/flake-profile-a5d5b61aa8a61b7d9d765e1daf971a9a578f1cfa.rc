@@ -24,6 +24,10 @@ export IN_NIX_SHELL
 LD='ld'
 export LD
 LINENO='79'
+LUA_CPATH=';;;/nix/store/dxgmn3dxh98l1g166cw1ij5vxd68ipql-lua5.2-luafilesystem-1.9.0-1/lib/lua/5.2/?.so'
+export LUA_CPATH
+LUA_PATH=';;;/nix/store/m6y0mm8za7aahpj7zqb671b872w6w7fv-lua5.2-penlight-1.15.0-1/share/lua/5.2/?.lua;/nix/store/m6y0mm8za7aahpj7zqb671b872w6w7fv-lua5.2-penlight-1.15.0-1/share/lua/5.2/?/init.lua;/nix/store/cag10va9mjqq6apsdv2n3awbm1afnfpi-lua5.2-argparse-0.7.2-1/share/lua/5.2/?.lua'
+export LUA_PATH
 MACHTYPE='x86_64-pc-linux-gnu'
 NIX_BINTOOLS='/nix/store/9q284bcg9jr5hd5537i7v9n2ngqm1dq8-binutils-wrapper-2.46'
 export NIX_BINTOOLS
@@ -35,13 +39,13 @@ NIX_CC='/nix/store/adcz0m6qq2flmshdf0zz2xwjr5zbq1gr-gcc-wrapper-15.3.0'
 export NIX_CC
 NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu='1'
 export NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu
-NIX_CFLAGS_COMPILE=' -frandom-seed=q6gqawmw4a -isystem /nix/store/5kld31barvw0mcnn8wzynxal5n9w41g3-racket-9.2/include -isystem /nix/store/66x1qiph890315003f27a15xsqax6lwf-gnumake-4.4.1/include -isystem /nix/store/5kld31barvw0mcnn8wzynxal5n9w41g3-racket-9.2/include -isystem /nix/store/66x1qiph890315003f27a15xsqax6lwf-gnumake-4.4.1/include'
+NIX_CFLAGS_COMPILE=' -frandom-seed=4j20hcrhnd -isystem /nix/store/dmzf6bg1rspz8prlhqsiig9bq2fk94vb-lua-5.2.4/include -isystem /nix/store/6h0nv32w4qi1gg5shh8fribg951wc7lp-lua-5.2.4/include -isystem /nix/store/66x1qiph890315003f27a15xsqax6lwf-gnumake-4.4.1/include -isystem /nix/store/dmzf6bg1rspz8prlhqsiig9bq2fk94vb-lua-5.2.4/include -isystem /nix/store/6h0nv32w4qi1gg5shh8fribg951wc7lp-lua-5.2.4/include -isystem /nix/store/66x1qiph890315003f27a15xsqax6lwf-gnumake-4.4.1/include'
 export NIX_CFLAGS_COMPILE
 NIX_ENFORCE_NO_NATIVE='1'
 export NIX_ENFORCE_NO_NATIVE
 NIX_HARDENING_ENABLE='bindnow format fortify fortify3 libcxxhardeningfast pic relro stackclashprotection stackprotector strictflexarrays1 strictoverflow zerocallusedregs'
 export NIX_HARDENING_ENABLE
-NIX_LDFLAGS='-rpath /home/bloodwolfe/src/csgo-config/outputs/out/lib  -L/nix/store/5kld31barvw0mcnn8wzynxal5n9w41g3-racket-9.2/lib -L/nix/store/5kld31barvw0mcnn8wzynxal5n9w41g3-racket-9.2/lib'
+NIX_LDFLAGS='-rpath /home/bloodwolfe/src/csgo-config/outputs/out/lib  -L/nix/store/dmzf6bg1rspz8prlhqsiig9bq2fk94vb-lua-5.2.4/lib -L/nix/store/6h0nv32w4qi1gg5shh8fribg951wc7lp-lua-5.2.4/lib -L/nix/store/dmzf6bg1rspz8prlhqsiig9bq2fk94vb-lua-5.2.4/lib -L/nix/store/6h0nv32w4qi1gg5shh8fribg951wc7lp-lua-5.2.4/lib'
 export NIX_LDFLAGS
 NIX_NO_SELF_RPATH='1'
 NIX_PKG_CONFIG_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu='1'
@@ -54,14 +58,16 @@ OBJCOPY='objcopy'
 export OBJCOPY
 OBJDUMP='objdump'
 export OBJDUMP
-OLDPWD=''
+OLDPWD='/nix/store/9q284bcg9jr5hd5537i7v9n2ngqm1dq8-binutils-wrapper-2.46'
 export OLDPWD
 OPTERR='1'
 OSTYPE='linux-gnu'
-PATH='/nix/store/swljvs2gz4mcb1avyjzb0cc2qrbslmbb-pkg-config-wrapper-0.29.2/bin:/nix/store/5kld31barvw0mcnn8wzynxal5n9w41g3-racket-9.2/bin:/nix/store/66x1qiph890315003f27a15xsqax6lwf-gnumake-4.4.1/bin:/nix/store/f13cgj4sypbjrwwpshfc2x4fd11is8dp-patchelf-0.15.2/bin:/nix/store/adcz0m6qq2flmshdf0zz2xwjr5zbq1gr-gcc-wrapper-15.3.0/bin:/nix/store/cmjirs6g57ddbyjglwic2g2cjrwy3ppr-gcc-15.3.0/bin:/nix/store/wnkmdd3nm0af5lxgwq1h4v52y6mdl4vj-glibc-2.42-67-bin/bin:/nix/store/mp8s10fwm685azvvv1qq7zyf7iajjlj8-coreutils-9.11/bin:/nix/store/9q284bcg9jr5hd5537i7v9n2ngqm1dq8-binutils-wrapper-2.46/bin:/nix/store/b01rwyg0ii5v8r50yrikcs5af64x0v0q-binutils-2.46/bin:/nix/store/mp8s10fwm685azvvv1qq7zyf7iajjlj8-coreutils-9.11/bin:/nix/store/m1p6gxgxis75rn0d549ny2y8gpxjv9pd-findutils-4.10.0/bin:/nix/store/bx0a1ijcg9ss307lrizi1cavyfs4s2g5-diffutils-3.12/bin:/nix/store/x2kfd3hnhqk8d6kxkyffpk7lyaz8iy76-gnused-4.10/bin:/nix/store/xj9dgyqrcq8hrf4mrkvbcp4pa3hgrbhy-gnugrep-3.12/bin:/nix/store/0fpnmyzv3jv5a3q3p3f08hfmy2qrhmnj-gawk-5.4.1/bin:/nix/store/j5r2kzhzb2x8avna8rb21xq7dxrrr6wv-gnutar-1.35/bin:/nix/store/5chmw9ib7xz2f4rw6bgdwxx0vb9bqqpa-gzip-1.14/bin:/nix/store/mbakq7rmq5sf04xljvvaj19d5xgzr1zr-bzip2-1.0.8-bin/bin:/nix/store/xrj3v3k9v5hvx3vl0jgfp5if3syqgh8g-gnumake-4.4.1/bin:/nix/store/c9mv5v53f7vy3wd00ah0f77k509mzmn7-bash-5.3p15/bin:/nix/store/xbdvi1a0mqzml869i0123pylhgjdyqi5-patch-2.8/bin:/nix/store/6gkcds8g0vi54xrmxpyv58r8x2fvqw79-xz-5.8.3-bin/bin:/nix/store/w5rsmvy2fcp7lrnn6y73zgf1rsjk6wn0-file-5.48/bin'
+PATH='/nix/store/swljvs2gz4mcb1avyjzb0cc2qrbslmbb-pkg-config-wrapper-0.29.2/bin:/nix/store/dmzf6bg1rspz8prlhqsiig9bq2fk94vb-lua-5.2.4/bin:/nix/store/6h0nv32w4qi1gg5shh8fribg951wc7lp-lua-5.2.4/bin:/nix/store/66x1qiph890315003f27a15xsqax6lwf-gnumake-4.4.1/bin:/nix/store/f13cgj4sypbjrwwpshfc2x4fd11is8dp-patchelf-0.15.2/bin:/nix/store/adcz0m6qq2flmshdf0zz2xwjr5zbq1gr-gcc-wrapper-15.3.0/bin:/nix/store/cmjirs6g57ddbyjglwic2g2cjrwy3ppr-gcc-15.3.0/bin:/nix/store/wnkmdd3nm0af5lxgwq1h4v52y6mdl4vj-glibc-2.42-67-bin/bin:/nix/store/mp8s10fwm685azvvv1qq7zyf7iajjlj8-coreutils-9.11/bin:/nix/store/9q284bcg9jr5hd5537i7v9n2ngqm1dq8-binutils-wrapper-2.46/bin:/nix/store/b01rwyg0ii5v8r50yrikcs5af64x0v0q-binutils-2.46/bin:/nix/store/mp8s10fwm685azvvv1qq7zyf7iajjlj8-coreutils-9.11/bin:/nix/store/m1p6gxgxis75rn0d549ny2y8gpxjv9pd-findutils-4.10.0/bin:/nix/store/bx0a1ijcg9ss307lrizi1cavyfs4s2g5-diffutils-3.12/bin:/nix/store/x2kfd3hnhqk8d6kxkyffpk7lyaz8iy76-gnused-4.10/bin:/nix/store/xj9dgyqrcq8hrf4mrkvbcp4pa3hgrbhy-gnugrep-3.12/bin:/nix/store/0fpnmyzv3jv5a3q3p3f08hfmy2qrhmnj-gawk-5.4.1/bin:/nix/store/j5r2kzhzb2x8avna8rb21xq7dxrrr6wv-gnutar-1.35/bin:/nix/store/5chmw9ib7xz2f4rw6bgdwxx0vb9bqqpa-gzip-1.14/bin:/nix/store/mbakq7rmq5sf04xljvvaj19d5xgzr1zr-bzip2-1.0.8-bin/bin:/nix/store/xrj3v3k9v5hvx3vl0jgfp5if3syqgh8g-gnumake-4.4.1/bin:/nix/store/c9mv5v53f7vy3wd00ah0f77k509mzmn7-bash-5.3p15/bin:/nix/store/xbdvi1a0mqzml869i0123pylhgjdyqi5-patch-2.8/bin:/nix/store/6gkcds8g0vi54xrmxpyv58r8x2fvqw79-xz-5.8.3-bin/bin:/nix/store/w5rsmvy2fcp7lrnn6y73zgf1rsjk6wn0-file-5.48/bin'
 export PATH
 PKG_CONFIG='pkg-config'
 export PKG_CONFIG
+PKG_CONFIG_PATH='/nix/store/dmzf6bg1rspz8prlhqsiig9bq2fk94vb-lua-5.2.4/lib/pkgconfig:/nix/store/6h0nv32w4qi1gg5shh8fribg951wc7lp-lua-5.2.4/lib/pkgconfig'
+export PKG_CONFIG_PATH
 PS4='+ '
 RANLIB='ranlib'
 export RANLIB
@@ -77,10 +83,11 @@ STRINGS='strings'
 export STRINGS
 STRIP='strip'
 export STRIP
-XDG_DATA_DIRS='/nix/store/swljvs2gz4mcb1avyjzb0cc2qrbslmbb-pkg-config-wrapper-0.29.2/share:/nix/store/5kld31barvw0mcnn8wzynxal5n9w41g3-racket-9.2/share:/nix/store/66x1qiph890315003f27a15xsqax6lwf-gnumake-4.4.1/share:/nix/store/f13cgj4sypbjrwwpshfc2x4fd11is8dp-patchelf-0.15.2/share'
+XDG_DATA_DIRS='/nix/store/swljvs2gz4mcb1avyjzb0cc2qrbslmbb-pkg-config-wrapper-0.29.2/share:/nix/store/dmzf6bg1rspz8prlhqsiig9bq2fk94vb-lua-5.2.4/share:/nix/store/m6y0mm8za7aahpj7zqb671b872w6w7fv-lua5.2-penlight-1.15.0-1/share:/nix/store/6h0nv32w4qi1gg5shh8fribg951wc7lp-lua-5.2.4/share:/nix/store/cag10va9mjqq6apsdv2n3awbm1afnfpi-lua5.2-argparse-0.7.2-1/share:/nix/store/66x1qiph890315003f27a15xsqax6lwf-gnumake-4.4.1/share:/nix/store/f13cgj4sypbjrwwpshfc2x4fd11is8dp-patchelf-0.15.2/share'
 export XDG_DATA_DIRS
 __structuredAttrs=''
 export __structuredAttrs
+_file='/nix/store/cag10va9mjqq6apsdv2n3awbm1afnfpi-lua5.2-argparse-0.7.2-1/share/lua/5.2/argparse.lua'
 _substituteStream_has_warned_replace_deprecation='false'
 buildInputs=''
 export buildInputs
@@ -124,19 +131,20 @@ doInstallCheck=''
 export doInstallCheck
 dontAddDisableDepTrack='1'
 export dontAddDisableDepTrack
-declare -a envBuildBuildHooks=()
-declare -a envBuildHostHooks=()
-declare -a envBuildTargetHooks=()
+declare -a envBuildBuildHooks=('luaEnvHook' 'luaEnvHook' )
+declare -a envBuildHostHooks=('luaEnvHook' 'luaEnvHook' )
+declare -a envBuildTargetHooks=('luaEnvHook' 'luaEnvHook' )
 declare -a envHostHostHooks=('pkgConfigWrapper_addPkgConfigPath' 'ccWrapper_addCVars' 'bintoolsWrapper_addLDVars' )
 declare -a envHostTargetHooks=('pkgConfigWrapper_addPkgConfigPath' 'ccWrapper_addCVars' 'bintoolsWrapper_addLDVars' )
 declare -a envTargetTargetHooks=()
 declare -a fixupOutputHooks=('if [ -z "${dontPatchELF-}" ]; then patchELF "$prefix"; fi' 'if [[ -z "${noAuditTmpdir-}" && -e "$prefix" ]]; then auditTmpdir "$prefix"; fi' 'if [ -z "${dontGzipMan-}" ]; then compressManPages "$prefix"; fi' '_moveLib64' '_moveSbin' '_moveSystemdUserUnits' 'patchShebangsAuto' '_pruneLibtoolFiles' '_doStrip' )
 initialPath='/nix/store/mp8s10fwm685azvvv1qq7zyf7iajjlj8-coreutils-9.11 /nix/store/m1p6gxgxis75rn0d549ny2y8gpxjv9pd-findutils-4.10.0 /nix/store/bx0a1ijcg9ss307lrizi1cavyfs4s2g5-diffutils-3.12 /nix/store/x2kfd3hnhqk8d6kxkyffpk7lyaz8iy76-gnused-4.10 /nix/store/xj9dgyqrcq8hrf4mrkvbcp4pa3hgrbhy-gnugrep-3.12 /nix/store/0fpnmyzv3jv5a3q3p3f08hfmy2qrhmnj-gawk-5.4.1 /nix/store/j5r2kzhzb2x8avna8rb21xq7dxrrr6wv-gnutar-1.35 /nix/store/5chmw9ib7xz2f4rw6bgdwxx0vb9bqqpa-gzip-1.14 /nix/store/mbakq7rmq5sf04xljvvaj19d5xgzr1zr-bzip2-1.0.8-bin /nix/store/xrj3v3k9v5hvx3vl0jgfp5if3syqgh8g-gnumake-4.4.1 /nix/store/c9mv5v53f7vy3wd00ah0f77k509mzmn7-bash-5.3p15 /nix/store/xbdvi1a0mqzml869i0123pylhgjdyqi5-patch-2.8 /nix/store/6gkcds8g0vi54xrmxpyv58r8x2fvqw79-xz-5.8.3-bin /nix/store/w5rsmvy2fcp7lrnn6y73zgf1rsjk6wn0-file-5.48'
+declare -A luaPathsSeen=(['/nix/store/66x1qiph890315003f27a15xsqax6lwf-gnumake-4.4.1']='true' ['/nix/store/6h0nv32w4qi1gg5shh8fribg951wc7lp-lua-5.2.4']='true' ['/nix/store/9q284bcg9jr5hd5537i7v9n2ngqm1dq8-binutils-wrapper-2.46']='true' ['/nix/store/adcz0m6qq2flmshdf0zz2xwjr5zbq1gr-gcc-wrapper-15.3.0']='true' ['/nix/store/cag10va9mjqq6apsdv2n3awbm1afnfpi-lua5.2-argparse-0.7.2-1']='true' ['/nix/store/dmzf6bg1rspz8prlhqsiig9bq2fk94vb-lua-5.2.4']='true' ['/nix/store/dxgmn3dxh98l1g166cw1ij5vxd68ipql-lua5.2-luafilesystem-1.9.0-1']='true' ['/nix/store/f13cgj4sypbjrwwpshfc2x4fd11is8dp-patchelf-0.15.2']='true' ['/nix/store/m6y0mm8za7aahpj7zqb671b872w6w7fv-lua5.2-penlight-1.15.0-1']='true' ['/nix/store/swljvs2gz4mcb1avyjzb0cc2qrbslmbb-pkg-config-wrapper-0.29.2']='true' ['/nix/store/wkyl6bvcp2dcw1in5qhqrq1dbvrwi193-update-autotools-gnu-config-scripts-hook']='true' )
 mesonFlags=''
 export mesonFlags
 name='nix-shell-env'
 export name
-nativeBuildInputs='/nix/store/swljvs2gz4mcb1avyjzb0cc2qrbslmbb-pkg-config-wrapper-0.29.2 /nix/store/5kld31barvw0mcnn8wzynxal5n9w41g3-racket-9.2 /nix/store/66x1qiph890315003f27a15xsqax6lwf-gnumake-4.4.1'
+nativeBuildInputs='/nix/store/swljvs2gz4mcb1avyjzb0cc2qrbslmbb-pkg-config-wrapper-0.29.2 /nix/store/dmzf6bg1rspz8prlhqsiig9bq2fk94vb-lua-5.2.4 /nix/store/m6y0mm8za7aahpj7zqb671b872w6w7fv-lua5.2-penlight-1.15.0-1 /nix/store/cag10va9mjqq6apsdv2n3awbm1afnfpi-lua5.2-argparse-0.7.2-1 /nix/store/66x1qiph890315003f27a15xsqax6lwf-gnumake-4.4.1'
 export nativeBuildInputs
 out='/home/bloodwolfe/src/csgo-config/outputs/out'
 export out
@@ -153,11 +161,12 @@ outputs='out'
 export outputs
 patches=''
 export patches
+pattern='lib/lua/5.2/?.so'
 phases='buildPhase'
 export phases
 pkg='/nix/store/adcz0m6qq2flmshdf0zz2xwjr5zbq1gr-gcc-wrapper-15.3.0'
 declare -a pkgsBuildBuild=()
-declare -a pkgsBuildHost=('/nix/store/swljvs2gz4mcb1avyjzb0cc2qrbslmbb-pkg-config-wrapper-0.29.2' '/nix/store/5kld31barvw0mcnn8wzynxal5n9w41g3-racket-9.2' '/nix/store/66x1qiph890315003f27a15xsqax6lwf-gnumake-4.4.1' '/nix/store/f13cgj4sypbjrwwpshfc2x4fd11is8dp-patchelf-0.15.2' '/nix/store/wkyl6bvcp2dcw1in5qhqrq1dbvrwi193-update-autotools-gnu-config-scripts-hook' '/nix/store/0y5xmdb7qfvimjwbq7ibg1xdgkgjwqng-no-broken-symlinks.sh' '/nix/store/cv1d7p48379km6a85h4zp6kr86brh32q-audit-tmpdir.sh' '/nix/store/85clx3b0xkdf58jn161iy80y5223ilbi-compress-man-pages.sh' '/nix/store/p3l1a5y7nllfyrjn2krlwgcc3z0cd3fq-make-symlinks-relative.sh' '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh' '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh' '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh' '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh' '/nix/store/cmzya9irvxzlkh7lfy6i82gbp0saxqj3-multiple-outputs.sh' '/nix/store/x8c40nfigps493a07sdr2pm5s9j1cdc0-patch-shebangs.sh' '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh' '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh' '/nix/store/z7k98578dfzi6l3hsvbivzm7hfqlk0zc-set-source-date-epoch-to-latest.sh' '/nix/store/pilsssjjdxvdphlg2h19p0bfx5q0jzkn-strip.sh' '/nix/store/adcz0m6qq2flmshdf0zz2xwjr5zbq1gr-gcc-wrapper-15.3.0' '/nix/store/9q284bcg9jr5hd5537i7v9n2ngqm1dq8-binutils-wrapper-2.46' )
+declare -a pkgsBuildHost=('/nix/store/swljvs2gz4mcb1avyjzb0cc2qrbslmbb-pkg-config-wrapper-0.29.2' '/nix/store/dmzf6bg1rspz8prlhqsiig9bq2fk94vb-lua-5.2.4' '/nix/store/m6y0mm8za7aahpj7zqb671b872w6w7fv-lua5.2-penlight-1.15.0-1' '/nix/store/dxgmn3dxh98l1g166cw1ij5vxd68ipql-lua5.2-luafilesystem-1.9.0-1' '/nix/store/6h0nv32w4qi1gg5shh8fribg951wc7lp-lua-5.2.4' '/nix/store/cag10va9mjqq6apsdv2n3awbm1afnfpi-lua5.2-argparse-0.7.2-1' '/nix/store/66x1qiph890315003f27a15xsqax6lwf-gnumake-4.4.1' '/nix/store/f13cgj4sypbjrwwpshfc2x4fd11is8dp-patchelf-0.15.2' '/nix/store/wkyl6bvcp2dcw1in5qhqrq1dbvrwi193-update-autotools-gnu-config-scripts-hook' '/nix/store/0y5xmdb7qfvimjwbq7ibg1xdgkgjwqng-no-broken-symlinks.sh' '/nix/store/cv1d7p48379km6a85h4zp6kr86brh32q-audit-tmpdir.sh' '/nix/store/85clx3b0xkdf58jn161iy80y5223ilbi-compress-man-pages.sh' '/nix/store/p3l1a5y7nllfyrjn2krlwgcc3z0cd3fq-make-symlinks-relative.sh' '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh' '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh' '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh' '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh' '/nix/store/cmzya9irvxzlkh7lfy6i82gbp0saxqj3-multiple-outputs.sh' '/nix/store/x8c40nfigps493a07sdr2pm5s9j1cdc0-patch-shebangs.sh' '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh' '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh' '/nix/store/z7k98578dfzi6l3hsvbivzm7hfqlk0zc-set-source-date-epoch-to-latest.sh' '/nix/store/pilsssjjdxvdphlg2h19p0bfx5q0jzkn-strip.sh' '/nix/store/adcz0m6qq2flmshdf0zz2xwjr5zbq1gr-gcc-wrapper-15.3.0' '/nix/store/9q284bcg9jr5hd5537i7v9n2ngqm1dq8-binutils-wrapper-2.46' )
 declare -a pkgsBuildTarget=()
 declare -a pkgsHostHost=()
 declare -a pkgsHostTarget=()
@@ -170,6 +179,8 @@ declare -a preFixupHooks=('_moveToShare' '_multioutDocs' '_multioutDevs' )
 preferLocalBuild='1'
 export preferLocalBuild
 prefix='/home/bloodwolfe/src/csgo-config/outputs/out'
+program_PATH='/nix/store/swljvs2gz4mcb1avyjzb0cc2qrbslmbb-pkg-config-wrapper-0.29.2/bin:/nix/store/dmzf6bg1rspz8prlhqsiig9bq2fk94vb-lua-5.2.4/bin:/nix/store/6h0nv32w4qi1gg5shh8fribg951wc7lp-lua-5.2.4/bin:/nix/store/66x1qiph890315003f27a15xsqax6lwf-gnumake-4.4.1/bin:/nix/store/f13cgj4sypbjrwwpshfc2x4fd11is8dp-patchelf-0.15.2/bin:/nix/store/adcz0m6qq2flmshdf0zz2xwjr5zbq1gr-gcc-wrapper-15.3.0/bin:/nix/store/9q284bcg9jr5hd5537i7v9n2ngqm1dq8-binutils-wrapper-2.46/bin'
+export program_PATH
 declare -a propagatedBuildDepFiles=('propagated-build-build-deps' 'propagated-native-build-inputs' 'propagated-build-target-deps' )
 propagatedBuildInputs=''
 export propagatedBuildInputs
@@ -179,9 +190,7 @@ export propagatedNativeBuildInputs
 declare -a propagatedTargetDepFiles=('propagated-target-target-deps' )
 shell='/nix/store/c9mv5v53f7vy3wd00ah0f77k509mzmn7-bash-5.3p15/bin/bash'
 export shell
-shellHook='raco pkg install --auto racket-langserver
-raco pkg install --auto fmt
-export CS2_CONFIG_DIR=$HOME/.local/share/steamgames/steamapps/common/Counter-Strike\ Global\ Offensive/game/csgo/cfg
+shellHook='export CS2_CONFIG_DIR=$HOME/.local/share/steamgames/steamapps/common/Counter-Strike\ Global\ Offensive/game/csgo/cfg
 '
 export shellHook
 stdenv='/nix/store/sxx9r2badzg82107kiwwm9jmzlf52mdb-stdenv-linux'
@@ -251,6 +260,41 @@ _addToEnv ()
             fi;
         done;
     done
+}
+_addToLuaPath ()
+{
+ 
+    local dir="$1";
+    nix_debug "_addToLuaPath called for dir $dir";
+    if [[ ! -d "$dir" ]]; then
+        nix_debug "$dir not a directory abort";
+        return 0;
+    fi;
+    if [[ -n "${luaPathsSeen[$dir]:-}" ]]; then
+        nix_debug "$dir already parsed";
+        return;
+    fi;
+    luaPathsSeen["$dir"]=true;
+    cd "$dir";
+    for pattern in 'share/lua/5.2/?.lua' 'share/lua/5.2/?/init.lua';
+    do
+        addToLuaSearchPathWithCustomDelimiter LUA_PATH "$PWD/$pattern";
+    done;
+    for pattern in 'lib/lua/5.2/?.so';
+    do
+        addToLuaSearchPathWithCustomDelimiter LUA_CPATH "$PWD/$pattern";
+    done;
+    cd - > /dev/null;
+    addToSearchPath program_PATH "$dir"/bin;
+    local prop="$dir/nix-support/propagated-build-inputs";
+    if [ -e "$prop" ]; then
+        local new_path;
+        for new_path in $(cat $prop);
+        do
+            nix_debug "newpath: $new_path";
+            _addToLuaPath "$new_path";
+        done;
+    fi
 }
 _allFlags ()
 {
@@ -702,6 +746,46 @@ addEnvHooks ()
         eval "${pkgHookVar}s"'+=("$@")';
     done
 }
+addToLuaPath ()
+{
+ 
+    local dir="$1";
+    if [ ! -d "$dir" ]; then
+        nix_debug "$dir not a directory abort";
+        return 0;
+    fi;
+    cd "$dir";
+    for pattern in 'share/lua/5.2/?.lua' 'share/lua/5.2/?/init.lua';
+    do
+        addToLuaSearchPathWithCustomDelimiter LUA_PATH "$PWD/$pattern";
+    done;
+    for pattern in 'lib/lua/5.2/?.so';
+    do
+        addToLuaSearchPathWithCustomDelimiter LUA_CPATH "$PWD/$pattern";
+    done;
+    cd - > /dev/null
+}
+addToLuaSearchPathWithCustomDelimiter ()
+{
+ 
+    local varName="$1";
+    local absPattern="$2";
+    if [[ ${!varName-} == *"$absPattern"* ]]; then
+        return;
+    fi;
+    if [[ ! -v "${varName}" ]]; then
+        export "${varName}=;;";
+    fi;
+    shopt -s globstar;
+    local adjustedPattern="${absPattern/\?/\*\*\/\*}";
+    for _file in $adjustedPattern;
+    do
+        export "${varName}=${!varName:+${!varName};}${absPattern}";
+        shopt -u globstar;
+        return;
+    done;
+    shopt -u globstar
+}
 addToSearchPath ()
 {
  
@@ -809,6 +893,18 @@ bintoolsWrapper_addLDVars ()
             export NIX_LDFLAGS${role_post}+=" -L$1/lib";
         fi;
     fi
+}
+buildLuaPath ()
+{
+ 
+    local luaPath="$1";
+    local path;
+    nix_debug "BUILD_LUA_PATH";
+    program_PATH=;
+    for path in $luaPath;
+    do
+        _addToLuaPath "$path";
+    done
 }
 buildPhase ()
 {
@@ -1371,6 +1467,11 @@ isScript ()
         return 1;
     fi
 }
+luaEnvHook ()
+{
+ 
+    _addToLuaPath "$1"
+}
 mapOffset ()
 {
  
@@ -1473,6 +1574,18 @@ nixWarnLog ()
 {
  
     _nixLogWithLevel 1 "$*"
+}
+nix_debug ()
+{
+ 
+    nix_print 3 "$1"
+}
+nix_print ()
+{
+ 
+    if [ ${NIX_DEBUG:-0} -ge $1 ]; then
+        echo "$2";
+    fi
 }
 noBrokenSymlinks ()
 {

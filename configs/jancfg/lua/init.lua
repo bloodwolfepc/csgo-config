@@ -1,0 +1,53 @@
+local strikecfg = require("strikecfg.lua.init")
+local cfg = strikecfg.config_builder()
+
+local header = [[
+    _                                        __       
+   (_) __ _ _ __         ___ ___        ___ / _| __ _ 
+   | |/ _` | '_ \ _____ / __/ __|_____ / __| |_ / _` |
+   | | (_| | | | |_____| (__\__ \_____| (__|  _| (_| |
+  _/ |\__,_|_| |_|      \___|___/      \___|_|  \__, |
+ |__/                                           |___/ 
+]]
+
+local settings = {
+	modules = {
+		preamble = {
+			message = "hello",
+			header = header,
+		},
+		sound = {
+			default_volume = 0.5,
+		},
+		keymaps = {
+			layers = {
+				["0"] = {},
+			},
+		},
+	},
+}
+
+for key, val in pairs(settings) do
+	cfg[key] = val
+end
+
+return cfg
+
+-- default_volume
+-- snd_headphone_eq 1 //natural, crisp, smooth
+-- snd_spatialize_lerp 0.5
+-- snd_steamaudio_enable_perspective_correction 1
+-- snd_autodetect_latency 1
+-- snd_mixahead 0.001
+-- snd_menumusic_volume 0
+-- snd_roundstart_volume 0
+-- snd_roundend_volume 0
+-- snd_mapobjective_volume 0
+-- snd_deathcamera_volume 0
+-- snd_tensecondwarning_volume 0.12
+-- snd_mvp_volume 0
+-- snd_mute_mvp_music_live_players 1
+-- snd_toolvolume 0.3
+-- snd_voipvolume 0.72
+-- voice_loopback 0
+-- voice_threshold -110
